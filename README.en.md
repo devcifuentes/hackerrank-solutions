@@ -8,10 +8,10 @@ Repository with my solutions to [HackerRank](https://www.hackerrank.com/) proble
 
 | Difficulty | Solved |
 |------------|--------|
-| Easy       | 17     |
+| Easy       | 18     |
 | Medium     | 0      |
 | Hard       | 0      |
-| **Total**  | **17** |
+| **Total**  | **18** |
 
 ## 💻 Languages
 
