@@ -62,6 +62,7 @@ Explanation 0:
 def gradingStudents(grades):
     new_grades=[]
     for grade in grades:
+        print(f'grade to evaluate ${grade}')
         p1 = grade + 1
         p2 = grade + 2
         if grade < 38:
