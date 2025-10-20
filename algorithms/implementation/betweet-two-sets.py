@@ -79,15 +79,46 @@ def getTotalX(a: List[int], b: List[int]) -> int:
     return len(results)
 
 
+def getTotalY(a: List[int], b: List[int]):
+    results = []
+    for i in range(max(a), min(b) + 1):
+        divisible_by_all = True
+        print(f'step1: {i}')
+        for j in range(len(a)):
+            print(f'Verification 1: {a[j]}')
+            if i % a[j] != 0:
+                divisible_by_all = False
+                print(f'break with {a[j]} result: {i} % {a[j]} = {i % a[j]}')
+                break
+
+        for n in range(len(b)):
+            print(f'Verification 2: {b[n]}')
+            if b[n] % i != 0:
+                divisible_by_all = False
+                print(f'break with {b[n]} result: {b[n]} % i = {b[n] % i}')
+                break
+        print(f'Verification all: {divisible_by_all}')
+        if divisible_by_all:
+            results.append(i)
+            print(f'Push + 1 = {len(results)} results')
+
+    return len(results)
+
+
+
+
 if __name__ == '__main__':
+    '''
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])
 
     m = int(first_multiple_input[1])
+    '''
 
-    arr = list(map(int, input().rstrip().split()))
-
-    brr = list(map(int, input().rstrip().split()))
-    result = getTotalX(arr, brr)
+    #arr = list(map(int, input().rstrip().split()))
+    arr = [2,4]
+    #brr = list(map(int, input().rstrip().split()))
+    brr = [16, 32,96]
+    result = getTotalY(arr, brr)
     print(f'result: {result}')
