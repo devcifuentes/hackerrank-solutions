@@ -97,18 +97,14 @@ def birthday(s, d, m):
 
 
 if __name__ == '__main__':
-    '''
+
     n = int(input().strip())
     s = list(map(int, input().rstrip().split()))
 
     first_multiple_input = input().rstrip().split()
     d = int(first_multiple_input[0])
     m = int(first_multiple_input[1])
-    '''
 
-    s = [2, 2, 1, 3, 2]
-    d = 4
-    m = 2
 
     result = birthday(s, d, m)
     print(result)
